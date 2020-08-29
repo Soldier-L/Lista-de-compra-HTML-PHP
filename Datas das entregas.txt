@@ -1,0 +1,9 @@
+01/09 - prof entregara o BD pronto
+
+15/09 - entrega da interface, paginas necessárias do sistema
+
+06/10 - entrega da parte de cadastro de usuario, login e senha intercalando com o BD
+
+27/10 - pré apresentação
+
+01/12 - Entrega final
