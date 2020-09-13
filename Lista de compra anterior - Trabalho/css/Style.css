@@ -1,0 +1,50 @@
+
+.painel_1{
+   border= 3px solid rgb(39, 39, 17); 
+}
+
+.painel_2{
+   border= 3px solid rgb(39, 39, 17); 
+   justify-content: center; 
+}
+
+.lista_1{
+   border= 3px solid rgb(39, 39, 17); 
+   min-height: 400px;
+   justify-content: left; 
+}
+
+
+.Carousel{
+   border= 3px solid yellowgreen; 
+   min-height: 400px;
+   margin-right: 3;
+   margin-left: 3;
+}
+
+
+.produtos-1{
+   border= 3px solid blue;
+   margin-right: 3;
+   margin-left: 3;   
+}
+
+
+.produtos-2{
+   border= 3px solid blue;
+   margin-right: 3;
+   margin-left: 3;   
+}
+
+
+.produtos-3{
+   border= 3px solid blue;
+   margin-right: 3;
+   margin-left: 3;   
+}
+
+
+.rodape{
+   border= 3px solid yellowgreen; 
+   
+}
