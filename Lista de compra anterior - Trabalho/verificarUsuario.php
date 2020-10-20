@@ -1,29 +1,38 @@
 <?php
 include "conexao.php";
-/**
-header('Content-type: application/json');
 
-$input = file_get_contents('php://input');
-$data = json_decode($input, true);
-$message = array();
-if($data['acao'] == "insert"){
-    $cdg_prod = $data['cdg_prod'];
-    $des_prod = $data['des_prod'];
-    $idr_glut = $data['idr_glut'];
+$user = $_POST["txtuser"];
+$senha = $_POST["txtsenha"];
 
-    //$q = mysqli_query($con, "INSERT INTO `T_PROD_TVV` ( `DES_PROD` , `IDR_GLUT`)
-    //VALUES ('$des_prod', '$idr_glut')");
+/**$sql="SELECT usuario, senha FROM t_user_list_buy where usuario='user_xpto' and senha='123456'";
 
-    $q = mysqli_query($con, "CALL PR_PROD_INS('$des_prod', '$idr_glut')");
-
-    if($q){
-    $message['status'] = "success";
-    }
-    else{
-    $message['status'] = "error";
-    }
-    echo json_encode($message);
+foreach (($con->query($sql)) as $row)
+{
+    echo $row['usuario'];
+    echo $row['senha'];
 }
-echo mysqli_error($con);
 */
+
+/**$sql=$con->query("SELECT usuario, senha FROM t_user_list_buy where usuario='user_xpto' and senha='123456'")->fetchAll();
+
+foreach ($sql as $row)
+{
+    echo $row['usuario'];
+    echo $row['senha'];
+}
+*/
+$sqlComando = "SELECT usuario, senha FROM t_user_list_buy where usuario='$user' and senha='$senha'";
+
+$stmt = $con->query($sqlComando);
+if ($stmt->num_rows > 0)
+{
+    echo "Login Correto<br>Acesso Liberado<br><br>";
+    echo "Usuario: $user<br>";
+    echo "Senha: $senha"; 
+}
+else{
+    echo "Login Incorreto<br>Acesso Negado<br><br>";
+    echo "Usuario: $user<br>";
+    echo "Senha: $senha"; 
+}
 ?>

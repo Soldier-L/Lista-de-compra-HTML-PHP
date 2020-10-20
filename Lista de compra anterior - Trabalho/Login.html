@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <script>
+        function target_popup (form){
+        window.open('','formpopup', 'width = 200,height = 200');
+        form.target = 'formpopup';
+        }
+        </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -90,24 +96,29 @@
                     </ul>
                 </div><!-- social media -->
                 <p class="description description-second">or use your email account:</p>
-                <form class="form">
+                <form class="form" action="verificarUsuario.php" method="post" onsubmit="target_popup(this)">
                 
+                    
                     <label class="label-input" for="">
                         <i class="far fa-envelope icon-modify"></i>
-                        <input type="email" placeholder="Email">
+                        <input type="texto" placeholder="Email" name="txtuser"></input>
                     </label>
                 
                     <label class="label-input" for="">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Password" name="txtsenha"></input>
                     </label>
+
+                    <input type=submit value="sign in"></input>
                 
-                    <a class="password" href="#">forgot your password?</a>
-                    <button class="btn btn-second">sign in</button>
+                    <!--a class="password" href="#">forgot your password?</a>
+                    <button class="btn btn-second">sign in</button-->
+                    
                 </form>
             </div><!-- second column -->
         </div><!-- second-content -->
     </div>
-    <script src="js/app.js"></script>
+    <script src="js/app.js">
+    </script>
 </body>
 </html>
