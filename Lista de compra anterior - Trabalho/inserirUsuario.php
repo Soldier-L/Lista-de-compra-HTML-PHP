@@ -10,7 +10,7 @@ $sqlComando = "INSERT INTO t_user_list_buy (usuario, email, senha) values('$nome
 $stmt = $con->query($sqlComando);
 if ($con->query($sqlComando))
 {
-    echo "Login Correto<br>Acesso Liberado<br><br>";
+    echo "Login Criado<br>Acesso Liberado<br><br>";
     echo "Usuario: $nome<br>";
     echo "Senha: $senha"; 
 }
