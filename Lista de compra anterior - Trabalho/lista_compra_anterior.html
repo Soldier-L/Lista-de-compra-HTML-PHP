@@ -12,6 +12,14 @@
 <link rel="stylesheet" href="css/magnific-popup.css">
 <!-- Your custom styles (optional) -->
 <link href="css/style3.css" rel="stylesheet">
+
+<script>
+  function target_popup (form){
+  window.open('','formpopup', 'width = 200,height = 200');
+  form.target = 'formpopup';
+  }
+  </script>
+
 </head>
 
 <body>
@@ -52,10 +60,13 @@
                         <img src="img/Lista de compra 1.png" class="card-img-top" alt="Lista de compra 1"> 
                         <div class="card-body">
                           <h5 class="card-title">Lista de compra 1</h5>
-                          <p class="card-text">Salada, tomate, óleo de cozinha, pão francês, leite, queijo.</p>
                         </div>
                         <div class="card-body">
-                          <a tabindex="0" class="btn btn-primary">Colocar no carrinho</a>
+
+                          <form class="form" action="lista01.php" method="post" onsubmit="target_popup(this)">
+                          <input type=submit value="Verificar a Lista"></input>
+                          </form><br>
+ 
                           <a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus" title="Precisa de Ajuda?" data-content="Contate nosso setor de ajuda para mais informações sobre esse produto.">Help!!</a>
                         </div>
                     </div>
@@ -64,10 +75,13 @@
                         <img src="img/Lista de compra 2.png" class="card-img-top" alt="Lista de compra 2">
                         <div class="card-body">
                           <h5 class="card-title">Lista de compra 2</h5>
-                          <p class="card-text">Salada, tomate, vinho, banana, água, maçã, uva, brócolis.</p>
                         </div>
                         <div class="card-body">
-                          <a tabindex="0" class="btn btn-primary">Colocar no carrinho</a>
+
+                          <form class="form" action="lista02.php" method="post" onsubmit="target_popup(this)">
+                          <input type=submit value="Verificar a Lista"></input>
+                          </form><br>
+
                           <a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus" title="Precisa de Ajuda?" data-content="Contate nosso setor de ajuda para mais informações sobre esse produto.">Help!!</a>
                         </div>
                     </div>
@@ -76,22 +90,28 @@
                         <img src="img/Lista de compra 3.png" class="card-img-top" alt="Lista de compra 1">
                         <div class="card-body">
                           <h5 class="card-title">Lista de compra 3</h5>
-                          <p class="card-text">Salada, tomate, maçã, banana, pimenta, uva, berinjela.</p>
                         </div>
                         <div class="card-body">
-                          <a tabindex="0" class="btn btn-primary">Colocar no carrinho</a>
+
+                          <form class="form" action="lista03.php" method="post" onsubmit="target_popup(this)">
+                          <input type=submit value="Verificar a Lista"></input>
+                          </form><br>
+
                           <a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus" title="Precisa de Ajuda?" data-content="Contate nosso setor de ajuda para mais informações sobre esse produto.">Help!!</a>
                         </div>
                     </div>
         
                     <div class="card" style="width: 18rem;">
                         <img src="img/Lista de compra 4.png" class="card-img-top" alt="Lista de compra 1">
-                        <div class="card-body">
+                        <div class="card-body">                          
                           <h5 class="card-title">Lista de compra 4</h5>
-                          <p class="card-text">Salada, macarrão, maçã vd, suco de laranja, banana, maça verm.</p>
                         </div>
                         <div class="card-body">
-                          <a tabindex="0" class="btn btn-primary">Colocar no carrinho</a>
+
+                          <form class="form" action="lista04.php" method="post" onsubmit="target_popup(this)">
+                          <input type=submit value="Verificar a Lista"></input>
+                          </form><br>
+
                           <a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus" title="Precisa de Ajuda?" data-content="Contate nosso setor de ajuda para mais informações sobre esse produto.">Help!!</a>
                         </div>
                     </div>
